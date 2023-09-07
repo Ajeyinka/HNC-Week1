@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week one task</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNGx | Stage One task</title>
+    <meta name="description" content="HNG Internship task stage one" />
+    <meta name="author" content="Olayinka Ajelolu" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-icon">
+       
+        <h1 data-testid="slackUserName">Olayinka Ajelolu</h1>
+      </div>
+      <div class="nav-links">
+        <a
+          href="https://github.com/Ajeyinka/HNC-Week1"
+          data-testid="githubURL"
+          >GitHub Repository</a
+        >
+      </div>
+    </nav>
     <main>
-        <div class="flex">
-            <img src="headshot.jpeg" data-testid="slackDisplayImage" alt="olayinka ajelolu">
-           
-        
-        <div>
-            <h1  data-testid="slackUserName">OLAYINKA AJELOLU</h1>
-            <h2 data-testid="currentDayOfTheWeek" id="day">
-
-            </h2>
-   
-            <h2 data-testid="currentUTCTime" id="time">
-   
-            </h2>
-   
-            <h2  data-testid="myTrack"> Track: Front end developent</h2>
-            
-        </div> 
-        </div>
-        
-           
-        <a href="https://github.com/Ajeyinka/HNC-Week1">View task source code</a>
-         
+      <section>
+        <img
+        src="headshot.jpeg"
+        alt="Olayinka Ajelolu"
+        data-testid="slackDisplayImage"
+      />
+      </section>
+      <section>
+        <h2>Day of the Week</h2>
+        <p data-testid="currentDayOfTheWeek">Thursday</p>
+      </section>
+      <section>
+        <h2>UTC Time</h2>
+        <p data-testid="currentUTCTime" id="time"></p>
+      </section>
+      <section>
+        <h2>Track</h2>
+        <p data-testid="myTrack">Frontend</p>
+      </section>
     </main>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
